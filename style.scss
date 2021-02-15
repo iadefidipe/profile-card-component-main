@@ -1,0 +1,32 @@
+@import './partials/variables';
+
+
+
+body{
+    background: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+}
+
+
+
+.container{
+    background-color: white;
+    text-align: center;
+    margin: 200px auto;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 10px hsl(229, 23%, 23%);
+    border-radius: 20px;
+    background: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position: ;
+    
+
+}
+
+
+
+
