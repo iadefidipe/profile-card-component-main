@@ -1,20 +1,85 @@
+html {
+  min-height: 100vh;
+  width: 100vw;
+}
+
 body {
+  min-width: 100%;
   background: #19a2ae;
-  background-image: url(./images/bg-pattern-top.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -350px -500px, 750px 150px;
+  color: #969696;
 }
 
 .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: white;
   text-align: center;
   margin: 200px auto;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  min-height: 340px;
   -webkit-box-shadow: 0 0 10px #2d3248;
           box-shadow: 0 0 10px #2d3248;
   border-radius: 20px;
+  font-family: "Kumbh Sans", sans-serif;
   background: url(./images/bg-pattern-card.svg);
   background-repeat: no-repeat;
+  background-position: top;
+}
+
+.container .card-details {
+  background: white;
+  -webkit-transform: translateY(130px);
+          transform: translateY(130px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container .card-details .card-image {
+  border: 5px solid white;
+  border-radius: 500px;
+  height: 20%;
+  width: 20%;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.container .card-details .name {
+  margin-top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card-details .name p:first-of-type {
+  font-weight: 700;
+  margin-right: 5px;
+  color: #2d3248;
+}
+
+.container .card-details .city {
+  margin-top: -5px;
+}
+
+.container .card-details hr.line {
+  border-top: 1px solid #d9d9d9;
+}
+
+.container .card-details .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .card-details .stats .followers p:first-of-type {
+  font-weight: 700;
+  color: #2d3248;
 }
 /*# sourceMappingURL=style.css.map */
