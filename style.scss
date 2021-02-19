@@ -4,7 +4,7 @@
 
 html{
     min-height: 100vh;
-    width: 100vw;
+    max-width: 1440px;
 }
 
 body{
@@ -14,6 +14,9 @@ body{
     background-repeat: no-repeat, no-repeat;
     background-position: -350px -500px, 750px 150px;
     color: $color-neutral-grey;
+    @include media-query(desktop-large){
+        background-position: 50px -500px, 1600px 350px;
+    }
     // background-size: 150px;
 
 }
@@ -30,11 +33,24 @@ body{
     min-height: 30%;
     box-shadow: 0 0 10px hsl(229, 23%, 23%);
     border-radius: 20px;
+    font-size: $font-normal;
     font-family: $font-kumbh;
     background: $color-neutral-white url(./images/bg-pattern-card.svg) no-repeat top;
     background-size: 100% 45% ;
-   
-    
+    @include media-query(desktop-large){
+        min-width: 25%;
+        max-width: 40%; 
+        font-size: 2rem;   
+    }
+
+    @include media-query(desktop-medium){
+        background-size: 100% 45% ;
+    }
+
+    @include media-query(mobile){
+        min-width: 40%;
+        max-width: 60%;
+    }
 
         .card-image{
             margin: 30px auto 0 auto;
@@ -42,7 +58,7 @@ body{
             border-radius: 500px;
             height: 20%;
             width: 20%;
-            transform: translateY(80px);
+            transform: translateY(90px);
         }
         .name{
             margin-top: 70px;
@@ -81,6 +97,7 @@ body{
         }
     
 }
+
 
 
 

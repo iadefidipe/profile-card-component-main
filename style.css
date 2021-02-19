@@ -1,6 +1,6 @@
 html {
   min-height: 100vh;
-  width: 100vw;
+  max-width: 1440px;
 }
 
 body {
@@ -10,6 +10,12 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: -350px -500px, 750px 150px;
   color: #969696;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  body {
+    background-position: 50px -500px, 1600px 350px;
+  }
 }
 
 .container {
@@ -24,9 +30,31 @@ body {
   -webkit-box-shadow: 0 0 10px #2d3248;
           box-shadow: 0 0 10px #2d3248;
   border-radius: 20px;
+  font-size: 1.125rem;
   font-family: "Kumbh Sans", sans-serif;
   background: white url(./images/bg-pattern-card.svg) no-repeat top;
   background-size: 100% 45%;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .container {
+    min-width: 25%;
+    max-width: 40%;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    background-size: 100% 45%;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .container {
+    min-width: 40%;
+    max-width: 60%;
+  }
 }
 
 .container .card-image {
@@ -35,8 +63,8 @@ body {
   border-radius: 500px;
   height: 20%;
   width: 20%;
-  -webkit-transform: translateY(80px);
-          transform: translateY(80px);
+  -webkit-transform: translateY(90px);
+          transform: translateY(90px);
 }
 
 .container .name {
