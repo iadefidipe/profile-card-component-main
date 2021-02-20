@@ -1,10 +1,10 @@
 html {
-  min-height: 100vh;
-  max-width: 1440px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  min-width: 100%;
+  max-width: 100%;
   background: #19a2ae;
   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
@@ -19,41 +19,38 @@ body {
 }
 
 .container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: white;
   text-align: center;
   margin: 200px auto;
-  min-width: 25%;
-  max-width: 30%;
-  min-height: 30%;
-  -webkit-box-shadow: 0 0 10px #2d3248;
-          box-shadow: 0 0 10px #2d3248;
+  width: 450px;
+  -webkit-box-shadow: 0 0 10px #19a2ae;
+          box-shadow: 0 0 10px #19a2ae;
   border-radius: 20px;
   font-size: 1.125rem;
   font-family: "Kumbh Sans", sans-serif;
   background: white url(./images/bg-pattern-card.svg) no-repeat top;
-  background-size: 100% 45%;
+  background-size: 450px;
 }
 
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
   .container {
-    min-width: 25%;
-    max-width: 40%;
+    background-size: 650px 200px;
+    width: 650px;
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .container {
-    background-size: 100% 45%;
+    background-size: 450px;
   }
 }
 
 @media screen and (max-width: 556px) {
   .container {
-    min-width: 40%;
-    max-width: 60%;
+    margin: 400px auto;
+    width: 250px;
+    background-size: 380px;
   }
 }
 

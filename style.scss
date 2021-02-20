@@ -3,12 +3,11 @@
 
 
 html{
-    min-height: 100vh;
-    max-width: 1440px;
+    box-sizing: border-box;
 }
 
 body{
-    min-width:100%;
+    max-width:100%;
     background: hsl(185, 75%, 39%);
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
@@ -24,32 +23,30 @@ body{
 
 
 .container{
-    box-sizing: border-box;
     background-color: $color-neutral-white;
     text-align: center;
     margin: 200px auto;
-    min-width: 25%;
-    max-width: 30%;
-    min-height: 30%;
-    box-shadow: 0 0 10px hsl(229, 23%, 23%);
+    width: 450px;
+    box-shadow: 0 0 10px hsl(185, 75%, 39%);
     border-radius: 20px;
     font-size: $font-normal;
     font-family: $font-kumbh;
     background: $color-neutral-white url(./images/bg-pattern-card.svg) no-repeat top;
-    background-size: 100% 45% ;
+    background-size: 450px;
     @include media-query(desktop-large){
-        min-width: 25%;
-        max-width: 40%; 
+        background-size: 650px 200px;
+        width: 650px;
         font-size: 2rem;   
     }
 
     @include media-query(desktop-medium){
-        background-size: 100% 45% ;
+        background-size: 450px;
     }
 
     @include media-query(mobile){
-        min-width: 40%;
-        max-width: 60%;
+        margin: 400px auto;
+        width: 250px;
+        background-size: 380px;
     }
 
         .card-image{
